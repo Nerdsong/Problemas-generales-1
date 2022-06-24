@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(145, 95, 145);
+}
+
+.visualNumeros{
+    font-family: 'Stick No Bills', sans-serif;
+    background-color: black;
+    color: rgb(213, 250, 6);
+    font-size: 100px;
+    
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-align: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 20px;
+}
+
+button{
+    background-color: rgb(213, 250, 6);
+    border-radius: 4px;
+    font-size: large;
+    padding: 5px;
+    margin: 3px;
+    font-family: 'Righteous', cursive;
+}
+
+
+input{
+    width: 50px ;
+    border-radius: 5px;
+    border-color: rgb(213, 250, 6);
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 6px;
+    font-size: 20px;
+    font-weight:bold;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.base{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    font-family: 'Righteous', cursive;
+    
+}
+
+header{
+    
+    text-align:center;
+    background-color: rgb(22, 22, 22);
+    padding: 3px;
+    font-family: 'Righteous', cursive;
+    font-size: 100px;
+    color: rgb(213, 250, 6);
+
+}
+
+.valoresUsuario{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    text-align: center;
+}
+.terceraColumnaRelleno{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
