@@ -1,46 +1,50 @@
+*{
+    margin: 0;
+}
+
 body{
-    background-color: rgb(145, 95, 145);
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.base{
+    font-family: 'Righteous', cursive;
 }
 
 .visualNumeros{
     font-family: 'Stick No Bills', sans-serif;
     background-color: rgb(0, 0, 0);
     color: rgb(213, 250, 6);
-    font-size: 100px;
-    text-shadow: 0px 0px 10px  rgb(213, 250, 6);
-    box-shadow: 0px 0px 40px  rgb(213, 250, 6);
-    grid-column-start: 2;
-    grid-column-end: 2;
+    font-size: 6.25rem;
+    text-shadow: 0rem 0rem 0.62rem  rgb(213, 250, 6);
+    box-shadow: inset 0rem 0rem 1.9rem rgb(130, 153, 1);
     text-align: center;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 10px;
-    border-radius: 20px;
+    padding-left: 0.18rem;
+    padding-right: 0.18rem;
+    border-radius: 1.25rem;
+    margin-bottom: 4.5rem;
 }
 
 button{
     background-color: rgb(213, 250, 6);
-    border-radius: 4px;
-    font-size: large;
-    padding: 5px;
-    margin: 3px;
+    border-radius: 0.25rem;
+    font-size: 1.95em;
+    padding: 0.31rem;
+    margin: 0.18rem;
     font-family: 'Righteous', cursive;
-    border-width: 5px;
+    border-width: 0.31rem;
     border-color: rgb(213, 250, 6);
 }
 
 
 input{
-    width: 50px ;
-    border-width: 3px;
+    width: 3.20rem ;
+    border-width: 0.18rem;
     border-color: rgb(71, 71, 70);
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    padding: 6px;
-    font-size: 20px;
+    margin-bottom: 4.875rem;
+    margin-top: 1.875rem;
+    padding: 0.375rem;
+    font-size: 1.95em;
     font-weight:bold;
     color:rgb(213, 250, 6);
     background-color: rgb(22, 22, 22);
@@ -54,30 +58,55 @@ input[type=number]::-webkit-outer-spin-button {
     }
 input[type=number] { -moz-appearance:textfield; }
 
-.base{
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    font-family: 'Righteous', cursive;
-    
-}
 
 header{
     
     text-align:center;
     background-color: rgb(22, 22, 22);
-    padding: 3px;
+    padding: 0.10em;
     font-family: 'Righteous', cursive;
-    font-size: 100px;
+    font-size: 6.25em;
     color: rgb(213, 250, 6);
 
 }
 
 .valoresUsuario{
-    grid-column-start: 2;
-    grid-column-end: 2;
     text-align: center;
 }
-.terceraColumnaRelleno{
-    grid-column-start: 3;
-    grid-column-end: 3;
+
+
+@media (max-width: 800px){
+    body{
+        font-size: 10px;
+        background-color: black;
+    }
+    .visualNumeros{
+        font-size: 5.125rem;
+        margin-bottom: 8rem;
+    }
+    input{
+        margin-bottom: 8rem;
+    }
+    button{
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media (max-width: 500px){
+    body{
+        font-size: 8px;
+        background-color: rgb(0, 0, 0);
+    }
+    .visualNumeros{
+        font-size: 3.125rem;
+        margin-bottom: 10rem;
+    }
+    input{
+        margin-bottom: 9rem;
+    }
+    button{
+        margin-bottom: 2rem;
+    }
+
 }
