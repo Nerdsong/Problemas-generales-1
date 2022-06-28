@@ -1,6 +1,5 @@
 const UN_SEGUNDO = 1000;
-const SONIDO_ALARMA = new Audio('./sonido/soloFKJ.mp3')
-
+const SONIDO_ALARMA = new Audio('./sonido/soloFKJ.mp3');
 
 let contador = 1; // hace el conteo de las veces que se ejecuta la función
 let segundosUsuario = "00" //cantidad de segundos establecida por el usuario. 
@@ -9,6 +8,7 @@ let horasUsuario = "00"
 let segundero = "aca va la función "
 
 function iniciarTemporizador(){
+    
     detenerConteo()
     horasUsuario = document.querySelector("#input_horas").value;
     minutosUsuario = document.querySelector("#input_minutos").value;
@@ -16,10 +16,12 @@ function iniciarTemporizador(){
     funcionRepetir()
     segundero = setInterval(funcionRepetir, UN_SEGUNDO);
 
-}   
+}
+
 function detenerConteo(){
-    
+
     clearInterval(segundero);
+
 }
 
 function resetear(){
@@ -49,12 +51,14 @@ function mostrarValoresNuméricos(){
     if (minutosUsuario < 10 && minutosUsuario > -1){
         minutosUsuarioConCeroAnadido = "0"+minutosUsuario
     }
+
     if (horasUsuario < 10 && horasUsuario > -1){
         horasUsuarioConCeroAnadido = "0"+horasUsuario
     }
+
     document.querySelector("#valores_activos").innerHTML=`
-    ${horasUsuarioConCeroAnadido}:${minutosUsuarioConCeroAnadido}:${segundosUsuarioConCeroAnadido}`
-    
+    ${horasUsuarioConCeroAnadido}:${minutosUsuarioConCeroAnadido}:${segundosUsuarioConCeroAnadido}` 
+
 }
 
 function funcionRepetir(){
